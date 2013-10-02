@@ -1,6 +1,8 @@
 import nose
 from a2 import ope
+from a3 import epo
 
+epo = epo()
 ope = ope()
 
 def test_add():
@@ -24,3 +26,9 @@ def test_soussinvert():
 	
 def test_mixdivandadd():
 	assert ope.div(ope.addi(10,6),ope.addi(2,6)) == 2
+	
+def test_much():
+	assert ope.noce() == 0
+	
+def test_conc():
+	assert epo.conc("a","a") == "aa"

@@ -11,3 +11,6 @@ class ope :
 	
 	def souss(self, x, y):
 		return x-y
+		
+	def noce(self):
+		return 0
