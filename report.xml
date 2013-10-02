@@ -1,0 +1,7 @@
+<report name="{REPORT_NAME}" categ="{CATEGORY_NAME}">
+  <test name="{TEST_NAME}" executed="{EXECUTED_STATUS}">
+    <result>
+     <success passed="{RESULT_STATUS}" state="{RESULT_STATE}"/>
+    </result>
+  </test>
+</report>
