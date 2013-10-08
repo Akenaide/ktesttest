@@ -4,7 +4,12 @@ from a3 import epo
 
 epo = epo()
 ope = ope()
+def setUp(self) :
+    print "Yay"
 
+def tearDown(self):
+    print "Sob sob"
+ 
 def test_add(self):
 	assert ope.addi(1,1) == 2
 	
