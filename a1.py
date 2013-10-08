@@ -2,8 +2,8 @@ import nose
 from a2 import ope
 from a3 import epo
 
-ope = a2()
-epo = a3()
+a2 = ope()
+a3 = epo()
 def setUp(self) :
     print "Yay"
 
