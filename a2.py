@@ -14,6 +14,3 @@ class ope :
 
     def noce(self):
         return 0
-
-    def nop(self):
-        return "nop"

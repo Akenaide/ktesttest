@@ -2,8 +2,8 @@ import nose
 from a2 import ope
 from a3 import epo
 
-epo = epo()
-ope = ope()
+ope = a2()
+epo = a3()
 def setUp(self) :
     print "Yay"
 
@@ -11,29 +11,32 @@ def tearDown(self):
     print "Sob sob"
  
 def test_add():
-	assert ope.addi(1,1) == 2
+	assert a2.addi(1,1) == 2
 	
 def test_add3():	
-	assert ope.addi(1,1,1) == 3
+	assert a2.addi(1,1,1) == 3
 
 def  test_div():
-	assert ope.div(4,2) == 2
-	assert ope.div(6,2) == 3
+	assert a2.div(4,2) == 2
+	assert a2.div(6,2) == 3
 	
 def test_divinverrt():	
-	assert ope.div(3,6) == 2
+	assert a2.div(3,6) == 2
 
 def test_souss():
-	assert ope.souss(4,2) == 2
+	assert a2.souss(4,2) == 2
 	
 def test_soussinvert():
-	assert ope.souss(2,4) == -2
+	assert a2.souss(2,4) == -2
 	
 def test_mixdivandadd():
-	assert ope.div(ope.addi(10,6),ope.addi(2,6)) == 2
+	assert a2.div(a2.addi(10,6),a2.addi(2,6)) == 2
 	
 def test_much():
-	assert ope.noce() == 0
+	assert a2.noce() == 0
 	
 def test_conc():
-	assert epo.conc("a","a") == "aa"
+	assert a3.conc("a","a") == "aa"
+    
+def test_nop():
+    assert a3.nop() == "nop"
