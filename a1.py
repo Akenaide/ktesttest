@@ -39,4 +39,4 @@ def test_conc():
 	assert a3.conc("a","a") == "aa"
     
 def test_nop():
-    assert a3.nop() == "no"
+    assert a3.nop() == "nop"
