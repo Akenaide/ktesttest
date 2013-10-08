@@ -1,3 +1,3 @@
 class epo :
-	def conc(self, x, y) :
-		return x+y
+    def conc(self, x, y) :
+        return x+y
