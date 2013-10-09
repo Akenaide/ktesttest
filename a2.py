@@ -5,7 +5,7 @@ class ope :
     def div(self, x, y):
 
         if x > y :
-            return y
+            return x//y
         else :
             return y//x
 
