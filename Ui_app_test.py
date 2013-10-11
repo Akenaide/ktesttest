@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
+from a2 import ope
+# from app_test import app_test
+from a3 import epo
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -23,11 +26,11 @@ except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
-class Ui_app_test(object):
-    def setupUi(self, Dialog):
-        Dialog.setObjectName(_fromUtf8("Test"))
-        Dialog.resize(553, 396)
-        self.frame = QtGui.QFrame(Dialog)
+class Ui_app(QtGui.QWidget):
+    def setupUi(self, app_test):
+        app_test.setObjectName(_fromUtf8("Test"))
+        app_test.resize(553, 396)
+        self.frame = QtGui.QFrame(app_test)
         self.frame.setGeometry(QtCore.QRect(90, 60, 331, 191))
         self.frame.setFrameShape(QtGui.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtGui.QFrame.Raised)
@@ -74,15 +77,24 @@ class Ui_app_test(object):
         self.lEY = QtGui.QLineEdit(self.widget)
         self.lEY.setObjectName(_fromUtf8("lEY"))
         self.horizontalLayout.addWidget(self.lEY)
+        self.label_3= QtGui.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName(_fromUtf8("result"))
+        self.horizontalLayout.addWidget(self.label_3)
 
-        self.retranslateUi(Dialog)
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
-
-    def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog", None))
-        self.pButtonMul.setText(_translate("Dialog", "*", None))
-        self.pButtonAdd.setText(_translate("Dialog", "+", None))
-        self.pButtonDiv.setText(_translate("Dialog", "/", None))
-        self.pButtonSou.setText(_translate("Dialog", "-", None))
-        self.label.setText(_translate("Dialog", "x :", None))
-        self.label_2.setText(_translate("Dialog", "Y :", None))
+        self.retranslateUi(app_test)
+        #€QtCore.QMetaObject.connectSlotsByName(app_test)
+        # QtCore.QObject.connect(self.pButtonMul ,ope.addi)
+        self.connect(self.pButtonAdd, QtCore.SIGNAL("clicked()"), app_test.addi)
+        
+    def retranslateUi(self, app_test):
+        app_test.setWindowTitle(_translate("app_test", "app_test", None))
+        self.pButtonMul.setText(_translate("app_test", "*", None))
+        self.pButtonAdd.setText(_translate("app_test", "+", None))
+        self.pButtonDiv.setText(_translate("app_test", "/", None))
+        self.pButtonSou.setText(_translate("app_test", "-", None))
+        self.label.setText(_translate("app_test", "x :", None))
+        self.label_2.setText(_translate("app_test", "Y :", None))
+        

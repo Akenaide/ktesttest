@@ -1,6 +1,6 @@
 class ope() :
     def addi(self, x, y, z=0):
-        return x+y+z
+        return int(x) + int(y) + z
 
     def div(self, x, y):
 
