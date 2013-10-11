@@ -25,7 +25,7 @@ except AttributeError:
 
 class Ui_app_test(object):
     def setupUi(self, Dialog):
-        Dialog.setObjectName(_fromUtf8("Dialog"))
+        Dialog.setObjectName(_fromUtf8("Test"))
         Dialog.resize(553, 396)
         self.frame = QtGui.QFrame(Dialog)
         self.frame.setGeometry(QtCore.QRect(90, 60, 331, 191))
@@ -86,14 +86,3 @@ class Ui_app_test(object):
         self.pButtonSou.setText(_translate("Dialog", "-", None))
         self.label.setText(_translate("Dialog", "x :", None))
         self.label_2.setText(_translate("Dialog", "Y :", None))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtGui.QApplication(sys.argv)
-    Dialog = QtGui.QDialog()
-    ui = Ui_Dialog()
-    ui.setupUi(Dialog)
-    Dialog.show()
-    sys.exit(app.exec_())
-
