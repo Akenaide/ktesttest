@@ -89,6 +89,7 @@ class Ui_app(QtGui.QWidget):
         # QtCore.QObject.connect(self.pButtonMul ,ope.addi)
         self.connect(self.pButtonAdd, QtCore.SIGNAL("clicked()"), app_test.addi)
         self.connect(self.pButtonSou, QtCore.SIGNAL("clicked()"), app_test.sou)
+        self.connect(self.pButtonMul, QtCore.SIGNAL("clicked()"), app_test.mul)
         
     def retranslateUi(self, app_test):
         app_test.setWindowTitle(_translate("app_test", "app_test", None))

@@ -12,5 +12,8 @@ class ope() :
     def souss(self, x, y):
         return int(x) - int(y)
 
+    def mul(self, x, y):
+        return int(x) * int(y)
+        
     def noce(self):
         return 0
