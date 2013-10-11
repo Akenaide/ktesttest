@@ -29,6 +29,9 @@ class app_test(QtGui.QMainWindow):
     
     def mul(self):
         self.ui.label_3.setText(str(self.ope.mul(self.getX(), self.getY())))
+        
+    def div(self):
+        self.ui.label_3.setText(str(self.ope.div(self.getX(), self.getY())))
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)

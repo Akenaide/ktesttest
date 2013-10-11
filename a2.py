@@ -3,9 +3,10 @@ class ope() :
         return int(x) + int(y) + z
 
     def div(self, x, y):
-
+        x = int(x)
+        y = int(y)
         if x > y :
-            return x//Y
+            return x//y
         else :
             return y//x
 

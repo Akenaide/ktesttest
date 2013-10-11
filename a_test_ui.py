@@ -28,3 +28,10 @@ class App_test_test(unittest.TestCase):
         QTest.keyClicks(self.app_test.ui.lEY, "5")
         QTest.mouseClick(self.app_test.ui.pButtonMul, Qt.LeftButton)
         self.assertEqual(self.app_test.ui.label_3.text() ,"15")
+    
+    def test_div(self):
+        QTest.keyClicks(self.app_test.ui.lEX, "15")
+        QTest.keyClicks(self.app_test.ui.lEY, "5")
+        QTest.mouseClick(self.app_test.ui.pButtonDiv, Qt.LeftButton)
+        self.assertEqual(self.app_test.ui.label_3.text() ,"3")
+        
