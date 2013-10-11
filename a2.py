@@ -10,7 +10,7 @@ class ope() :
             return y//x
 
     def souss(self, x, y):
-        return x-y
+        return int(x) - int(y)
 
     def noce(self):
         return 0

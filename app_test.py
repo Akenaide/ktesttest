@@ -23,6 +23,9 @@ class app_test(QtGui.QMainWindow):
         
     def addi(self):
         self.ui.label_3.setText(str(self.ope.addi(self.getX(), self.getY())))
+    
+    def sou(self):
+        self.ui.label_3.setText(str(self.ope.souss(self.getX(), self.getY())))
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
