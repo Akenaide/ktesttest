@@ -10,7 +10,7 @@ class App_test_test(unittest.TestCase):
     def setUp(self):
         self.app = QApplication(sys.argv)
         self.app_test = app_test()
-        
+    
     def test_addition(self):
         QTest.keyClicks(self.app_test.ui.lEX, "3")
         QTest.keyClicks(self.app_test.ui.lEY, "3")
@@ -40,4 +40,3 @@ class App_test_test(unittest.TestCase):
         QTest.keyClicks(self.app_test.ui.lEY, "15")
         QTest.mouseClick(self.app_test.ui.pButtonDiv, Qt.LeftButton)
         self.assertEqual(self.app_test.ui.label_3.text() ,"3")
-        
