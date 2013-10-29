@@ -14,3 +14,6 @@ class ope() :
 
     def noce(self):
         return 0
+
+    def hey(self):
+        return 5
