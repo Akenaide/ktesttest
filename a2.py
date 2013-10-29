@@ -16,4 +16,4 @@ class ope() :
         return 0
 
     def hey(self):
-        return 7777777 
+        return 777 
