@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="11" errors="1" failures="0" skip="0"><testcase classname="nose.failure.Failure" name="runTest" time="0.002"><error type="exceptions.SyntaxError" message="invalid syntax (a_test_ui.py, line 1)"><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\Lib\unittest\case.py", line 332, in run
+    testMethod()
+  File "c:\Python27\lib\site-packages\nose\loader.py", line 413, in loadTestsFromName
+    addr.filename, addr.module)
+  File "c:\Python27\lib\site-packages\nose\importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "c:\Python27\lib\site-packages\nose\importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "e:\work\ktesttest\a_test_ui.py", line 1
+    def
+      ^
+SyntaxError: invalid syntax
+]]></error></testcase><testcase classname="main_test" name="test_add" time="0.001"></testcase><testcase classname="main_test" name="test_add3" time="0.001"></testcase><testcase classname="main_test" name="test_div" time="0.000"></testcase><testcase classname="main_test" name="test_divinverrt" time="0.001"></testcase><testcase classname="main_test" name="test_souss" time="0.001"></testcase><testcase classname="main_test" name="test_soussinvert" time="0.001"></testcase><testcase classname="main_test" name="test_mixdivandadd" time="0.002"></testcase><testcase classname="main_test" name="test_much" time="0.001"></testcase><testcase classname="main_test" name="test_conc" time="0.001"></testcase><testcase classname="main_test" name="test_nop" time="0.001"></testcase></testsuite>
