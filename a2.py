@@ -1,4 +1,12 @@
 class ope() :
+
+    """
+    >>> op = ope()
+    >>> op.addi(2,3)
+    5
+    >>> op.div(6,2)
+    3
+    """
     def addi(self, x, y, z=0):
         return int(x) + int(y) + z
 

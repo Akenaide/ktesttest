@@ -16,7 +16,7 @@ def test_add():
 def test_add3():	
 	assert a2.addi(1,1,1) == 3
 
-def  test_div():
+def test_div():
 	assert a2.div(4,2) == 2
 	assert a2.div(6,2) == 3
 	
