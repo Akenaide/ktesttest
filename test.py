@@ -5,13 +5,13 @@ from a3 import epo
 a2 = ope()
 a3 = epo()
 def setUp(self) :
-    print "Yay"
+    print "setup"
 
 def tearDown(self):
-    print "Sob sob"
+    print "tearDown"
  
 def test_add():
-	assert a2.addi(1,1) == 2
+	assert a2.addi(1,1) == 3 
 	
 def test_add3():	
 	assert a2.addi(1,1,1) == 3
